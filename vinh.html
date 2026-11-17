@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giới thiệu bản thân</title>
+
+    <style>
+        /* Cài đặt chung */
+        body {
+            margin: 0;
+            background-color: #fff9f2;
+            font-family: Arial, sans-serif;
+            color: #44352c;
+        }
+
+        /* Đầu trang */
+        header {
+            background-color: #f8e9d8;
+            padding: 25px 40px;
+        }
+
+        header h1 {
+            color: #a85e32;
+            font-size: 38px;
+        }
+
+        header p {
+            color: #806d60;
+            font-size: 20px;
+        }
+
+        /* Thanh menu */
+        nav {
+            background-color: #eac8a8;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #704326;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 17px;
+        }
+
+        /* Phần giới thiệu */
+        .gioithieu {
+            padding: 70px 40px;
+            background-color: #fff3e6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gioithieu-noidung {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .gioithieu h2 {
+            color: #a85e32;
+            font-size: 35px;
+        }
+
+        .gioithieu p {
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+        /* Khung ảnh a1.jpg */
+        .anh-daidien {
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #eac8a8;
+        }
+
+        /* Các phần nội dung */
+        section {
+            padding: 40px;
+            min-height: 200px;
+            border-bottom: 1px solid #ead9c9;
+        }
+
+        section h2 {
+            color: #a85e32;
+            font-size: 28px;
+        }
+
+        section p {
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+        /* Khung video v1.mp4 */
+        .khung-video {
+            max-width: 720px;
+            margin: 20px auto 0;
+            background-color: #f8e9d8;
+            padding: 10px;
+            border-radius: 12px;
+            border: 3px solid #eac8a8;
+            box-shadow: 0 6px 18px rgba(168, 94, 50, 0.15);
+        }
+
+        .khung-video video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            background-color: #000;
+        }
+
+        /* Nút liên hệ */
+        .nut {
+            display: inline-block;
+            padding: 13px 25px;
+            margin: 10px 10px 10px 0;
+            background-color: #c77b45;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 17px;
+        }
+
+        .nut:hover {
+            background-color: #a85e32;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: #f8e9d8;
+            padding: 25px;
+            text-align: center;
+            color: #806d60;
+        }
+
+        /* Hiển thị trên điện thoại */
+        @media (max-width: 600px) {
+            header, section, .gioithieu {
+                padding: 25px 20px;
+            }
+
+            .gioithieu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+                font-size: 15px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Đầu trang -->
+    <header>
+        <h1>Dương Tấn Vinh</h1>
+        <p>Trang web giới thiệu bản thân</p>
+    </header>
+
+    <!-- Thanh menu -->
+    <nav>
+        <a href="#trangchu">Trang chủ</a>
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#sothich">Sở thích</a>
+        <a href="#muctieu">Mục tiêu</a>
+        <a href="#lienhe">Liên hệ</a>
+    </nav>
+
+    <!-- Trang chủ -->
+    <div class="gioithieu" id="trangchu">
+        <div class="gioithieu-noidung">
+            <h2>Xin chào!</h2>
+            <h2>Mình là Dương Tấn Vinh</h2>
+
+            <p>
+                Chào mừng mọi người đến với trang web
+                giới thiệu bản thân của mình.
+            </p>
+        </div>
+
+        <img src="a1.jpg" alt="Ảnh Dương Tấn Vinh" class="anh-daidien">
+    </div>
+
+    <!-- Phần 1 -->
+    <section id="gioithieu">
+        <h2>01. Thông tin cá nhân</h2>
+
+        <p>Họ và tên: Dương Tấn Vinh</p>
+        <p>Số điện thoại: 0836675289</p>
+        <p>Email: duongtuanvinhhl24@gmail.com</p>
+    </section>
+
+    <!-- Phần 2 -->
+    <section>
+        <h2>02. Tiểu sử</h2>
+
+        <p>
+            Đây là nơi giới thiệu về bản thân,
+            quá trình học tập và những kỷ niệm đáng nhớ.
+        </p>
+    </section>
+
+    <!-- Phần 2.5: Video giới thiệu -->
+    <section id="video">
+        <h2>🎬 Video giới thiệu</h2>
+        <p>Cùng xem một video ngắn về mình nhé!</p>
+
+        <div class="khung-video">
+            <video src="v1.mp4" controls poster="a1.jpg" preload="metadata">
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+        </div>
+    </section>
+
+    <!-- Phần 3 -->
+    <section id="sothich">
+        <h2>03. Sở thích</h2>
+
+        <p>
+            Mình yêu thích âm nhạc, thể thao,
+            công nghệ và khám phá những điều mới.
+        </p>
+    </section>
+
+    <!-- Phần 4 -->
+    <section id="muctieu">
+        <h2>04. Ước mơ và mục tiêu</h2>
+
+        <p>
+            Chia sẻ những ước mơ, dự định
+            và mục tiêu trong tương lai.
+        </p>
+    </section>
+
+    <!-- Phần 5 -->
+    <section id="lienhe">
+        <h2>05. Thông tin liên hệ</h2>
+
+        <p>
+            Email: duongtuanvinhhl24@gmail.com
+        </p>
+
+        <p>
+            Facebook: Dương Tấn Vinh
+        </p>
+
+        <!-- Nút Gmail -->
+        <a class="nut"
+           href="mailto:duongtuanvinhhl24@gmail.com">
+            Gmail
+        </a>
+
+        <!-- Nút Facebook -->
+        <a class="nut"
+           href="https://www.facebook.com/share/1Exdn1A8BC/"
+           target="_blank">
+            Facebook
+        </a>
+
+    </section>
+
+    <!-- Cuối trang -->
+
+</body>
+</html>
